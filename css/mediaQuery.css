@@ -1,0 +1,433 @@
+/* Importação de Camadas CSS. */
+@import url(./variables.css);
+@import url(./fonts.css);
+@import url(./style.css);
+
+/* 1 rem = 16 pixels. */
+
+/* Resolução para Desktop/Notebook. */
+@media screen and (min-width: 998px){
+    #top{
+        padding: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrap{
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .colum1{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .imgLogotipo{
+        max-width: 230px;
+    }
+
+    .bannerPage{
+        padding: 2rem 1.4rem 4rem 1.4rem;
+    }
+
+    .titleBanner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgBanner{
+        max-width: 340px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    .boxImgBanner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linkGitHub{
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+        font-family: var(--font-btn-banner);
+        padding: 1rem;
+        border: 6px solid var(--cor-laranja);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .linkLinkedin{
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+        font-family: var(--font-btn-banner);
+        padding: 1rem 2.4rem 1rem 1rem;
+        border: 6px solid var(--cor-laranja);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .linkGitHub:hover{
+        background-color: var(--cor-tomato);
+        border: 6px solid var(--cor-branco);
+        transition: .3s;
+    }
+        
+    .linkLinkedin:hover{
+        background-color: var(--cor-tomato);
+        border: 6px solid var(--cor-branco);
+        transition: .4s;
+    }
+
+    .gridProjects{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects{
+        width: 100%;
+        color: var(--cor-preto);
+        background-color: var(--cor-branco);
+        border: 2px solid var(--cor-branco);
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgCard{
+        width: 100%;
+        max-width: 310px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub{
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--cor-preto);
+        border: 2px solid var(--cor-laranja);
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        margin: 1.2rem 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .repGitHub:hover{
+        background-color: var(--cor-laranja);
+    }
+
+    .boxContact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infoCt{
+        text-align: left;
+    }
+
+    .iconRS{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    .linkRS{
+        text-decoration: none;
+    }
+    
+    .iconIMG{
+        transition: .4s;
+    }
+    
+    .iconIMG:hover{
+        transform: scale(1.4);
+    }
+    
+    .infoCopy{
+        margin: 1rem 0rem;
+        border-top: 1px var(--cor-branco) solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .logotipoCopy{
+        width: 30px;
+    }
+}
+
+/* Resolução para Celular/Tablet. */
+@media screen and (max-width: 998px){
+    #top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .colum1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleBanner{
+        padding: 0px 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.4rem;
+    }
+
+    .bannerPage{
+        padding-bottom: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgBanner{
+        max-width: 300px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    .btnPortfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkGitHub{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+        font-family: var(--font-btn-banner);
+        border: 6px solid var(--cor-laranja);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .linkLinkedin{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+        font-family: var(--font-btn-banner);
+        border: 6px solid var(--cor-laranja);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .gridProjects{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects{
+        width: 100%;
+        color: var(--cor-preto);
+        background-color: var(--cor-branco);
+        border: 2px solid var(--cor-branco);
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgCard{
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub{
+        max-width: 290px;
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--cor-preto);
+        border: 2px solid var(--cor-laranja);
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .repGitHub:hover{
+        background-color: var(--cor-laranja);
+    }
+    
+    .ulContact{
+        padding-left: 0px;
+    }
+
+    .boxContact{
+        padding: 1rem;
+    }
+
+    .contact{
+        padding-top: 2rem;
+    }
+
+    .linkRS{
+        text-decoration: none;
+    }
+
+    .iconIMG{
+        max-width: 40px;
+    }
+
+    .infoCopy{
+        margin: 1rem 0rem;
+        font-size: 0.8rem;
+        border-top: 1px var(--cor-branco) solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .logotipoCopy{
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .imgLogotipo{
+        max-width: 140px;
+        margin: 1.2rem 0.6rem;
+    }
+
+    .linkMenuDesktop{
+        text-decoration: none;
+        color: var(--cor-preto);
+        font-family: Montserrat-Bold;
+    }
+    
+    .linkMenuDesktop:hover{
+        color: var(--cor-laranja);
+    }
+
+    .menuWeb{
+        padding-right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuMobile{
+        display: none;
+    }
+
+    .menuTwo{
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        gap: 1rem;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .imgLogotipo{
+        max-width: 140px;
+        margin: 1.2rem 0.6rem;
+    }
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .menuMobile{
+        padding-right: 12px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menuOne{
+        width: 100%;
+        text-align: center;
+        left: -140%;
+        top: 90px;
+        gap: 0;
+        padding-left: 0px;
+        position: absolute;
+        background-color: var(--cor-laranja);
+        flex-direction: column;
+        transition: 0.3s;
+    }
+
+    .menuOne.active{
+        left: 0;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .hamburguer{
+        cursor: pointer;
+    }
+
+    .linkMenuMobile{
+        text-decoration: none;
+        color: var(--cor-branco);
+    }
+
+    .bar{
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: var(--cor-preto);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+
+    /* nth-child - Este comando pertence a uma seria de outros comandos para efeitos e movimentações. */
+    /* Muito utilizado para manipular posições de elementos no HTML através do CSS. */
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

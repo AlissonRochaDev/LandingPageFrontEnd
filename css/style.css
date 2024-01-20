@@ -1,0 +1,303 @@
+/* Importação de Camadas CSS. */
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./mediaQuery.css);
+
+/* 1 rem = 16 pixels. */
+
+/* Formatação por TAGs. */
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    padding: 0.6rem 0rem;
+    margin: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formatação por IDs. */
+#homePage{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Montserrat-Regular;
+    background-color: var(--cor-laranja);
+}
+
+#top{
+    background-color: var(--cor-branco);
+}
+
+#page{
+    padding-top: 2rem;
+    background-color: var(--cor-preto);
+}
+
+#endPage{
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+/* Formatação por Class. */
+.imgBanner:hover{
+    transform: scale(1.1);
+}
+
+.titleBanner{
+    color: var(--cor-branco);
+    display: flex;
+    align-items: center;
+}
+
+.textBanner{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconeAt{
+    font-size: 4.2rem;
+    color: var(--cor-laranja);
+}
+
+.iconeAt:hover{
+    color: var(--cor-branco);
+    cursor: default;
+}
+
+.nome{
+    font-size: 4.2rem;
+}
+
+.nome:hover{
+    color: var(--cor-laranja);
+    cursor: default;
+}
+
+.funcao{
+    font-size: 2rem;
+}
+
+.funcao:hover{
+    color: var(--cor-laranja);
+    cursor: default;
+}
+
+.descricao{
+    font-size: 1.2rem;
+}
+
+.descricao:hover{
+    color: var(--cor-laranja);
+    cursor: default;
+}
+
+.btnPortfolio{
+    display: flex;
+    gap: 1rem;
+}
+
+.GitHub{
+    width: 100%;
+    max-width: 90px;
+}
+
+.linkedin{
+    width: 100%;
+    max-width: 90px;
+}
+
+.about{
+    padding: 2.4rem 0.8rem;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    text-align: center;
+    cursor: default;
+}
+
+.titleAbout{
+    font-family: var(--font-sub-title);
+    font-size: 2.4rem;
+    cursor: default;
+}
+
+.boxHabil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.habil{
+    padding: 8px;
+    gap: 3rem;
+    font-size: 12px;
+    border: 0.1px var(--cor-preto) solid;
+    border-radius: 16px;
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    cursor: default;
+}
+
+.habil:hover{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    font-weight: 500;
+    transition: 1s;
+    border: none;
+}
+
+.projects{
+    text-align: center;
+    color: var(--cor-branco);
+}
+
+.textProjects{
+    padding: 0rem 0.6rem;
+}
+
+.titleProjects{
+    font-family: var(--font-text);
+    font-size: 1rem;
+    cursor: default;
+}
+
+.imgCard:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 2px 2px var(--cor-preto);
+}
+
+.imgGitHub{
+    width: 30px;
+}
+
+.contact{
+    color: var(--cor-branco);
+    background-color: var(--cor-laranja);
+    text-align: center;
+}
+
+.infoCt{
+    cursor: default;
+}
+
+.formContact{
+    text-align: left;
+}
+
+.campForm{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+}
+
+.campFormMsg{
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: var(--font-text);
+    font-size: 0.8rem;
+}
+
+.campForm:focus, .campFormMsg:focus{
+    border: 2px solid var(--cor-preto);
+}
+
+.btnForm{
+    width: 80px;
+    height: 35px;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btnForm:hover{
+    background-color: var(--cor-laranja);
+    border: 2px solid var(--cor-preto);
+}
+
+.mapsCt{
+    margin-top: 1.4rem;
+    background-color: var(--cor-preto);
+}
+
+.listCtc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+.linkWhatsApp{
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.boxWhatsAapp{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.linkWhatsApp:hover{
+    font-weight: bolder;
+    color: var(--cor-verde-dark);
+    background-color: var(--cor-branco);
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+.iconCtc{
+    width: 45px;
+    height: 45px;
+    margin-right: 1.6rem;
+    transition: .4s;
+}
+
+.iconCtc:hover{
+    transform: scale(1.1);
+}
+
+.btnNav{
+    margin: 0rem 0.6rem 0.6rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+
+.btnNavTopo{
+    width: 60px;
+    transition: .4s;
+    /* box-shadow: var(--cor-preto) 1px 1px 4px; */
+}
+
+.btnNavTopo:hover{
+    transform: scale(1.1);
+}
+
+.infoWhatsApp{
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 10px;
+}

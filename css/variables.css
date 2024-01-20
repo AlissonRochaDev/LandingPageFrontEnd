@@ -1,0 +1,20 @@
+@import url(./fonts.css);
+
+/* Variaveis CSS. */
+:root{
+    --cor-preto: #000000;
+    --cor-cinza: #808080;
+    --cor-branco: #ffffff;
+    --cor-verde: #008000;
+    --cor-verde-dark: #006400;
+    --cor-laranja: #ff5e00;
+    --cor-tomato: #ff6347;
+    --cor-vermelho: #ff0000;
+    --cor-azul: #0000ff;
+    --cor-amarelo: #ffff00;
+
+    --font-btn-banner: Montserrat-Bold;
+    --font-title: Montserrat-Bold;
+    --font-sub-title: Montserrat-Medium;
+    --font-text: Montserrat-Regular;
+}
